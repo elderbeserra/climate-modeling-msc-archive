@@ -1,0 +1,53 @@
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+.cursor/
+
+# Fortran build artifacts
+*.o
+*.mod
+*.obj
+*.a
+*.so
+*.dSYM/
+a.out
+bin/
+
+# GrADS / runtime temporary files
+fort.*
+*.grads_tmp
+
+# Climate data and large generated artifacts
+*.bin
+*.out
+*.dat
+*.nc
+*.nc4
+*.grb
+*.grib
+*.grib2
+
+# Generated plots and reports
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.ps
+*.svg
+
+# Local run folders (user-specific)
+data/
+output/
+tmp/
+work/
+
+# Keep documentation text files tracked
+!README.md
+CHANGELOG.md
+NewKnowledgeBase.md
+!docs/**/*.md
+!examples/**/*.md

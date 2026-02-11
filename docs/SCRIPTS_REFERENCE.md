@@ -1,0 +1,47 @@
+# Scripts Reference
+
+This reference summarizes the role of each archived script.
+
+- `grads/climate/baseline_cru.gs`: Build baseline climatology diagnostics from CRU references.
+- `grads/climate/calcula_etp_rea.gs`: Compute evapotranspiration and related diagnostics from reanalysis/model fields.
+- `grads/climate/clim_mri.gs`: Compute climate diagnostics for MRI scenarios (present, near future, future).
+- `grads/climate/clima_1140_eta.gs`: Generate climatological fields for ETA model experiment window.
+- `grads/climate/cria_txt.gs`: Generate per-grid monthly text inputs for downstream PDSI workflows.
+- `grads/climate/cria_txt_prec.gs`: Export precipitation time series for semiarid analysis.
+- `grads/climate/cria_txt_temp.gs`: Export temperature time series for semiarid analysis.
+- `grads/climate/monthly_gp_agcm.gs`: Produce monthly AGCM climatological summaries.
+- `grads/pdsi/ave_pdsi.gs`: Compute temporal/spatial averages for PDSI fields.
+- `grads/pdsi/conta_freqpdsi.gs`: Compute PDSI frequency statistics by category.
+- `grads/pdsi/cria_txt_pdsi.gs`: Export monthly PDSI values to text format.
+- `grads/pdsi/cria_txt_pdsiseas.gs`: Export seasonal PDSI values to text format.
+- `grads/pdsi/pdsi_organiza.gs`: Organize and summarize PDSI outputs for analysis.
+- `grads/utils/ea.gs`: Quick diagnostic helper for vapor pressure related field checks.
+- `grads/utils/print.gs`: Generate standard diagnostic plot panels.
+- `grads/utils/print_future.gs`: Generate plot outputs for future scenario diagnostics.
+- `grads/utils/print_obs.gs`: Generate plot outputs for observational diagnostics.
+- `grads/utils/print_prec_evap_rsw.gs`: Generate combined precipitation/evaporation/radiation plots.
+- `grads/utils/print_quick.gs`: Generate quick-look diagnostic plots.
+- `grads/utils/teta.gs`: Compute or visualize theta-related thermodynamic diagnostics.
+- `grads/utils/tmp_mon_mean_6190.gs`: Compute monthly mean temperature climatology for 1961-1990 reference.
+- `grads/utils/wind.gs`: Compute or visualize wind diagnostics.
+- `grads/validation/validaca_temp.gs`: Validate modeled temperature against observational datasets.
+- `grads/validation/validacao_prec.gs`: Validate modeled precipitation against observational datasets.
+- `shell/pdsi/criapdsi460.csh`: Create/prepare PDSI processing structure for grid-domain runs.
+- `shell/pdsi/pdsi_folders.csh`: Create and populate PDSI folder structure for present scenario.
+- `shell/pdsi/pdsi_folders_cad.csh`: Create PDSI folder structure with CAD inputs for present scenario.
+- `shell/pdsi/pdsi_folders_cad_nf.csh`: Create PDSI folder structure with CAD inputs for near-future scenario.
+- `shell/pdsi/pdsi_folders_future.csh`: Create PDSI folder structure for future scenario.
+- `shell/pdsi/pdsi_folders_nf.csh`: Create PDSI folder structure for near-future scenario.
+- `shell/pdsi/pdsi_folders_normais_future.csh`: Prepare future scenario normal climatology PDSI folders.
+- `shell/pdsi/pdsi_folders_normais_nf.csh`: Prepare near-future normal climatology PDSI folders.
+- `shell/pdsi/roda_pdsi.csh`: Execute batch PDSI runs for present scenario.
+- `shell/pdsi/roda_pdsi_near.csh`: Execute batch PDSI runs for near-future scenario.
+- `shell/utils/limpapdsi.csh`: Clean intermediate PDSI files from generated folders.
+- `shell/utils/pdsiteste.csh`: Execute PDSI workflow test run.
+- `fortran/utils/merge_tbl.f`: Merge station/grid table outputs into consolidated text artifacts.
+- `fortran/data_transform/transforma_pdsi_future.f90`: Transform future PDSI text outputs into binary grid format with outlier correction.
+- `fortran/data_transform/transforma_pdsi_near.f90`: Transform near-future PDSI text outputs into binary grid format.
+- `examples/teste.gs`: Prototype GrADS test script preserved for archive traceability.
+- `examples/teste_dump.gs`: Prototype GrADS dump test preserved for archive traceability.
+- `examples/teste_readcsh.csh`: Prototype shell test for reading/execution behavior.
+- `examples/tutorial_fort.f90`: Fortran prototype/tutorial program preserved for archive traceability.
